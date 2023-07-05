@@ -1,6 +1,7 @@
 .new-tweet form {
   display: flex;
   flex-direction: column;
+  font-weight: 700;
 }
 
 .new-tweet textarea {
@@ -10,10 +11,8 @@
   margin-bottom: 16px;
   font-size: 20px;
   font-weight: 700;
-}
-
-.new-tweet textarea:focus {
   outline: none;
+  resize: none;
 }
 
 .tweet-footer {
