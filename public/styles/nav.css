@@ -1,7 +1,7 @@
 nav {
   font-family: 'Bungee', sans-serif;
   background-color: #4056A1;
-  color: #fff;
+  color: #FFFFFF;
   padding: 0 1.5em;
   height: 120px;
   width: 100vw;
@@ -9,7 +9,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 1;
  }
 
 nav span {
