@@ -28,3 +28,11 @@
   padding: 8px;
   border: none;
 }
+
+.tweet-button:hover {
+  background-color: #586cad;
+}
+
+.counter-red {
+  color: #ED3C1F;
+}
