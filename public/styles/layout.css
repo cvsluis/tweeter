@@ -27,7 +27,7 @@ body {
 
  main {
   width: 90%;
-  margin: auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
