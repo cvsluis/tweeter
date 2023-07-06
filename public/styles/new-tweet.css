@@ -1,3 +1,4 @@
+/* NEW TWEET CONTAINER */
 .new-tweet form {
   display: flex;
   flex-direction: column;
@@ -15,6 +16,7 @@
   resize: none;
 }
 
+/* NEW TWEET FOOTER */
 .new-tweet footer {
   display: flex;
   justify-content: space-between;
