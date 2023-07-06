@@ -7,17 +7,17 @@ $(document).ready(function() {
     // set characters availalbe to 140 minus length of text area input
     const charsAvailable = 140 - $(this).val().length;
     // set variable to dom object with class of counter
-    const counter = $(this).parent().find(".counter");
+    const $counter = $(this).parent().find(".counter");
 
-    // update jquery counter text to be the current value of chars available
-    $(counter).text(charsAvailable);
+    // update jQuery counter text to be the current value of chars available
+    $counter.text(charsAvailable);
 
     // if characters available is less than 0, apply counter-red class
     if (charsAvailable < 0) {
-      $(counter).addClass("counter-red");
+      $counter.addClass("counter-red");
       // if text limit is more than 0, remove counter-red class
     } else {
-      $(counter).removeClass("counter-red");
+      $counter.removeClass("counter-red");
     }
 
   });
