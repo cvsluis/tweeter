@@ -28,4 +28,8 @@ body {
  main {
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-around;
  }

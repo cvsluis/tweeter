@@ -1,4 +1,4 @@
-header {
+.main-header {
   background-color: #D69821;
   background-image: url("../images/asfalt-light.png");
   width: 100vw;
@@ -10,6 +10,6 @@ header {
   flex-direction: column;
 }
 
-header h2 {
+.main-header h2 {
   margin: 0;
 }
