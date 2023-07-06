@@ -31,5 +31,4 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  justify-content: space-around;
  }
