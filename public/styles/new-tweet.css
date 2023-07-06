@@ -7,7 +7,7 @@
 
 .new-tweet textarea {
   border: none;
-  border-bottom: 4px solid rgb(84, 81, 73);
+  border-bottom: 4px solid #545149;
   background-color: transparent;
   margin-bottom: 16px;
   font-size: 20px;
