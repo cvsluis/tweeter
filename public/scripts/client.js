@@ -31,7 +31,9 @@ $(document).ready(function() {
     }
   ];
 
+  // function that takes in tweet object and returns HTML structure of tweet
   const createTweetElement = function(tweet) {
+    // create HTML markup using template literals
     const $tweet = `      
   <article class="tweet">
     <header>
@@ -54,12 +56,28 @@ $(document).ready(function() {
     return $tweet;
   };
 
+  // function that takes in array of tweets
+  // and appends each tweet to tweets container
   const renderTweets = function(tweets) {
+    // loop through tweets
     for (const tweet of tweets) {
+      // create HTML for the tweet
       const $tweet = createTweetElement(tweet);
+      // append HTML to tweets container
       $('#tweets-container').append($tweet);
     }
   };
 
+  // call render function to add tweets to index.html
   renderTweets(data);
+
+  // use jQuery to add event listener for submit on new tweet form
+  $("#tweet-form").on("submit", function(event) {
+    // prevent default form submission behaviour
+    event.preventDefault();
+    // serialize the form data
+    const $tweet = $(this).serialize();
+    // submit POST request using jQuery
+    $.post("/tweets", $tweet);
+  });
 });
