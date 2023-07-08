@@ -24,14 +24,14 @@
   font-family: 'Bungee', sans-serif;
 }
 
-.tweet-button {
+.new-tweet button {
   background-color: #4056A1;
   color: #fff;
   padding: 8px;
   border: none;
 }
 
-.tweet-button:hover {
+.new-tweet button:hover {
   background-color: #586cad;
 }
 
