@@ -15,7 +15,7 @@ $(document).ready(function() {
     // if characters available is less than 0, apply counter-red class
     if (charsAvailable < 0) {
       $counter.addClass("counter-red");
-      // if text limit is more than 0, remove counter-red class
+      // if characters available is more than 0, remove counter-red class
     } else {
       $counter.removeClass("counter-red");
     }
