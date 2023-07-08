@@ -32,3 +32,9 @@ body {
   flex-direction: column;
   gap: 40px;
  }
+
+ #tweets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+ }
