@@ -34,7 +34,7 @@ $(document).ready(function() {
   };
 
   // function that takes in array of tweets
-  // and appends each tweet to tweets container
+  // and prepends each tweet to tweets container
   const renderTweets = function(tweets) {
     // loop through tweets
     for (const tweet of tweets) {
@@ -54,6 +54,7 @@ $(document).ready(function() {
     });
   };
 
+  // call load tweets when page is rendered
   loadTweets();
 
   // function that prepends the last added tweet to the page
@@ -70,12 +71,15 @@ $(document).ready(function() {
 
     // serialize the form data
     const $tweet = $(this).serialize();
+    // set variable for text area data
     const $tweetText = $('#tweet-text').val();
 
+    // text data is empty, send alert
     if ($tweetText === '') {
       alert('Cannot sumbit an empty tweet!');
       return;
     }
+    // text data is greater than 140 characters, send alert
     if ($tweetText.length > 140) {
       alert('Tweet cannot be more than 140 characters!');
       return;
