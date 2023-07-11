@@ -20,7 +20,7 @@ $(document).ready(function() {
       </div>
       <h4>${tweet.user.handle}</h4>
     </header>
-    <p>${tweet.content.text}</p>
+    <p>${escape(tweet.content.text)}</p>
     <footer>
       <p>${timeAgo}</p>
       <div class="tweet-icons">
@@ -31,6 +31,13 @@ $(document).ready(function() {
     </footer>
   </article>`;
     return $tweet;
+  };
+
+  // escape function to prevent XSS
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
   };
 
   // function that takes in array of tweets
