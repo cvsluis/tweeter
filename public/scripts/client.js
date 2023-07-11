@@ -7,6 +7,9 @@
 $(document).ready(function() {
   // function that takes in tweet object and returns HTML structure of tweet
   const createTweetElement = function(tweet) {
+    // format date using timeago
+    const timeAgo = timeago.format(tweet.created_at);
+
     // create HTML markup using template literals
     const $tweet = `      
   <article class="tweet">
@@ -19,7 +22,7 @@ $(document).ready(function() {
     </header>
     <p>${tweet.content.text}</p>
     <footer>
-      <p>${tweet.created_at}</p>
+      <p>${timeAgo}</p>
       <div class="tweet-icons">
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-retweet"></i>
