@@ -15,7 +15,7 @@ $(document).ready(function() {
   <article class="tweet">
     <header>
       <div class="user-icon">
-        <img src="${tweet.user.avatars}"/>
+        <img src="${tweet.user.avatars}" alt="User Profile Image"/>
         <h3>${tweet.user.name}</h3>
       </div>
       <h4>${tweet.user.handle}</h4>
