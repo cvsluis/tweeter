@@ -70,6 +70,17 @@ $(document).ready(function() {
 
     // serialize the form data
     const $tweet = $(this).serialize();
+    const $tweetText = $('#tweet-text').val();
+
+    if ($tweetText === '') {
+      alert('Cannot sumbit an empty tweet!');
+      return;
+    }
+    if ($tweetText.length > 140) {
+      alert('Tweet cannot be more than 140 characters!');
+      return;
+    }
+
     // submit POST request using jQuery's Ajax method
     $.ajax({
       method: "POST",
