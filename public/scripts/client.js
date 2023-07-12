@@ -9,7 +9,6 @@ $(document).ready(function() {
   const createTweetElement = function(tweet) {
     // format date using timeago
     const timeAgo = timeago.format(tweet.created_at);
-
     // create HTML markup using template literals
     const $tweet = `      
   <article class="tweet">
@@ -34,7 +33,7 @@ $(document).ready(function() {
   };
 
   // escape function to prevent XSS
-  const escape = function (str) {
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
@@ -61,9 +60,6 @@ $(document).ready(function() {
     });
   };
 
-  // call load tweets when page is rendered
-  loadTweets();
-
   // function that prepends the last added tweet to the page
   const loadOneTweet = function() {
     $.get("/tweets", function(data) {
@@ -75,20 +71,28 @@ $(document).ready(function() {
   $("#tweet-form").on("submit", function(event) {
     // prevent default form submission behaviour
     event.preventDefault();
+    // hide error message if error message is currently showing
+    $('.error').hide();
 
     // serialize the form data
     const $tweet = $(this).serialize();
     // set variable for text area data
     const $tweetText = $('#tweet-text').val();
 
-    // text data is empty, send alert
+    // text data is empty, send error
     if ($tweetText === '') {
-      alert('Cannot sumbit an empty tweet!');
+      // set error message
+      $('.error p').html('Cannot post an empty tweet!');
+      // show error message with slide down affect
+      $('.error').slideDown(700);
       return;
     }
-    // text data is greater than 140 characters, send alert
+    // text data is greater than 140 characters, send error
     if ($tweetText.length > 140) {
-      alert('Tweet cannot be more than 140 characters!');
+      // set error message
+      $('.error p').html('Tweet cannot be more than 140 characters!');
+      // show error message with slide down affect
+      $('.error').slideDown(700);
       return;
     }
 
@@ -105,4 +109,9 @@ $(document).ready(function() {
       $('.counter').val(140);
     });
   });
+
+  // call load tweets when page is rendered
+  loadTweets();
+  // hide error message section when page is rendered
+  $('.error').hide();
 });
