@@ -110,8 +110,19 @@ $(document).ready(function() {
     });
   });
 
-  // call load tweets when page is rendered
+  // toggle tweet form when clicking on nav action button
+  $(".nav-action").on("click", function() {
+    $('#tweet-form').slideToggle(700);
+    // set cursor to focus on tweet text area
+    $('#tweet-text').focus();
+    // if error message is visible, hide
+    $('.error:visible').slideUp();
+  });
+
+  // call load tweets when page loads
   loadTweets();
-  // hide error message section when page is rendered
+  // hide error message section when page loads
   $('.error').hide();
+  // hide tweet form when page loads
+  $("#tweet-form").hide();
 });

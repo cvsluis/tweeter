@@ -17,16 +17,29 @@ nav span {
 }
 
 .nav-action {
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: #4056A1;
+  border: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Source Sans 3', sans-serif;
+  gap: 8px;
+  transition: ease-out 0.125s;
 }
 
 .nav-action p {
   margin: 0;
+  color: #FFFFFF;
+}
+
+.nav-action:hover {
+  cursor: pointer;
+  transform: scale(1.1); 
+  transition: ease-in 0.125s;
 }
 
 .nav-action i {
   color: #ED3C1F;
+  --fa-animation-duration: 2s;
 }
