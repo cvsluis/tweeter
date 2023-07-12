@@ -1,4 +1,10 @@
 /* NEW TWEET CONTAINER */
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .new-tweet form {
   display: flex;
   flex-direction: column;
@@ -32,9 +38,24 @@
 }
 
 .new-tweet button:hover {
-  background-color: #586cad;
+  background-color: #586CAD;
 }
 
 .counter-red {
   color: #ED3C1F;
+}
+
+/* ERROR MESSAGE */
+.new-tweet .error {
+  border: 2px solid #ED3C1F;
+  color: #FF0000;
+  background-color: #FF000033;
+  padding: 18px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.new-tweet .error p {
+  margin: 0;
 }
