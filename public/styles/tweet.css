@@ -37,6 +37,10 @@ article.tweet h4 {
   color: #C5CBE3
 }
 
+article.tweet p {
+  overflow: auto;
+}
+
 /* TWEET FOOTER */
 article.tweet footer {
   border-top: 4px solid #545149;
