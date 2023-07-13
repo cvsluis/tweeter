@@ -30,11 +30,29 @@ body {
   margin: 40px auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
  }
 
  #tweets-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
+ }
+ 
+ .gap40 {
+  gap: 40px;
+ }
+
+ @media only screen and (min-width: 1024px) {
+  .main-container {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px;
+    gap: 40px;
+  }
+
+  main {
+    width: 65%;
+    margin: 0;
+  }
  }

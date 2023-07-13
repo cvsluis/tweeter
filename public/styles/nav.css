@@ -1,14 +1,15 @@
 nav {
   font-family: 'Bungee', sans-serif;
-  background-color: #4056A1;
+  background-color: #D69821;
+  background-image: url("../images/asfalt-light.png");
   color: #FFFFFF;
   padding: 0 1.5em;
   height: 120px;
   width: 100vw;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
  }
 
 nav span {
@@ -18,7 +19,7 @@ nav span {
 
 .nav-action {
   font-family: 'Source Sans 3', sans-serif;
-  background-color: #4056A1;
+  background-color: transparent;
   border: none;
   padding: 0;
   display: flex;
@@ -43,3 +44,10 @@ nav span {
   color: #ED3C1F;
   --fa-animation-duration: 2s;
 }
+
+ @media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+    background-image: none;
+  }
+ }

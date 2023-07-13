@@ -112,6 +112,8 @@ $(document).ready(function() {
 
   // toggle tweet form when clicking on nav action button
   $(".nav-action").on("click", function() {
+    // add gap40 class when tweet form is displayed
+    $('main').toggleClass("gap40");
     $('#tweet-form').slideToggle(700);
     // set cursor to focus on tweet text area
     $('#tweet-text').focus();
