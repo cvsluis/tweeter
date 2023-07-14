@@ -46,9 +46,9 @@ body {
   .main-container {
     padding-top: 160px;
     padding-bottom: 40px;
+    margin: 0 40px;
     display: flex;
     flex-direction: row;
-    margin: 0 40px;
     gap: 40px;
   }
 
