@@ -1,0 +1,23 @@
+.scroll-btn {
+  /* display: none; */
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  width: 90px;
+  height: 90px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: ease-out 0.125s;
+}
+
+.scroll-btn:hover {
+  transform: scale(1.1); 
+  transition: ease-in 0.125s;
+}
