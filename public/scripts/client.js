@@ -114,11 +114,43 @@ $(document).ready(function() {
   $(".nav-action").on("click", function() {
     // add gap40 class when tweet form is displayed
     $('main').toggleClass("gap40");
+    // use slide effect to show tweet form
     $('#tweet-form').slideToggle(700);
     // set cursor to focus on tweet text area
     $('#tweet-text').focus();
     // if error message is visible, hide
     $('.error:visible').slideUp();
+  });
+
+  // scroll event handler to toggle nav and scroll buttons
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() > 200) {
+      $(".scroll-btn").show();
+      $(".nav-action").hide();
+    } else {
+      $(".scroll-btn").hide();
+      $(".nav-action").show();
+    }
+  });
+
+  // function that displays new tweet form
+  const displayTweetArea = function() {
+    // add gap40 class when tweet form is displayed
+    $('main').addClass("gap40");
+    // use slide effect to show tweet form
+    $('#tweet-form').slideDown(700);
+    // set cursor to focus on tweet text area
+    $('#tweet-text').focus();
+    // if error message is visible, hide
+    $('.error:visible').slideUp();
+  };
+
+  // click event handler for button
+  $(".scroll-btn").on("click", function() {
+    // scroll to top of page
+    window.scrollTo({ top: 0 });
+    // call function that shows new tweet form
+    displayTweetArea();
   });
 
   // call load tweets when page loads
