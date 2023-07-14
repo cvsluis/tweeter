@@ -39,6 +39,7 @@
 
 .new-tweet button:hover {
   background-color: #586CAD;
+  cursor: pointer;
 }
 
 .counter-red {
