@@ -45,6 +45,7 @@ body {
  @media only screen and (min-width: 1024px) {
   .main-container {
     padding-top: 160px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: row;
     margin: 0 40px;
