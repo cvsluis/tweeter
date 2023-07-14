@@ -5,6 +5,8 @@
  */
 
 $(document).ready(function() {
+/* -------------------------- Tweet Form Handlers --------------------------*/
+
   // function that takes in tweet object and returns HTML structure of tweet
   const createTweetElement = function(tweet) {
     // format date using timeago
@@ -110,16 +112,32 @@ $(document).ready(function() {
     });
   });
 
-  // toggle tweet form when clicking on nav action button
-  $(".nav-action").on("click", function() {
+  /* ----------------------- Tweet Box Toggle Buttons -----------------------*/
+
+  // function that takes in boolean and either shows tweet 
+  // box or toggles tweet box
+  function showTweetBox(doToggle) {
+    if (doToggle) {
+      // toggle gap40 class when tweet form is toggled
+      $('main').toggleClass("gap40");
+      // use slide effect to show tweet form
+      $('#tweet-form').slideToggle(700);
+    } else {
     // add gap40 class when tweet form is displayed
-    $('main').toggleClass("gap40");
-    // use slide effect to show tweet form
-    $('#tweet-form').slideToggle(700);
+      $('main').addClass("gap40");
+      // use slide effect to show tweet form
+      $('#tweet-form:hidden').slideDown(700);
+    }
     // set cursor to focus on tweet text area
     $('#tweet-text').focus();
     // if error message is visible, hide
     $('.error:visible').slideUp();
+  }
+
+  // toggle tweet form when clicking on nav action button
+  $(".nav-action").on("click", function() {
+    // do toggle argument set to true
+    showTweetBox(true);
   });
 
   // scroll event handler to toggle nav and scroll buttons
@@ -133,25 +151,16 @@ $(document).ready(function() {
     }
   });
 
-  // function that displays new tweet form
-  const displayTweetArea = function() {
-    // add gap40 class when tweet form is displayed
-    $('main').addClass("gap40");
-    // use slide effect to show tweet form
-    $('#tweet-form').slideDown(700);
-    // set cursor to focus on tweet text area
-    $('#tweet-text').focus();
-    // if error message is visible, hide
-    $('.error:visible').slideUp();
-  };
-
-  // click event handler for button
+  // click event handler for scroll button
   $(".scroll-btn").on("click", function() {
     // scroll to top of page
     window.scrollTo({ top: 0 });
-    // call function that shows new tweet form
-    displayTweetArea();
+    // call function to show new tweet form
+    // do toggle argument set to false
+    showTweetBox(false);
   });
+
+/* ----------------- Initial Function Calls to Set Up Page -----------------*/
 
   // call load tweets when page loads
   loadTweets();
