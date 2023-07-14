@@ -1,11 +1,12 @@
 /* TWEET CONTAINER */
 article.tweet {
   border: 4px solid #545149;
+  border-radius: 15px;
   padding: 24px;
 }
 
 article.tweet:hover {
-  box-shadow: 12px 12px 2px 1px #C5CBE3;
+  box-shadow: 12px 12px 2px 1px #1d5a793e;
 }
 
 /* TWEET HEADER */
@@ -34,7 +35,7 @@ article.tweet header {
 
 article.tweet h4 {
   margin: 0;
-  color: #C5CBE3
+  color: #1d5a793e;
 }
 
 article.tweet p {
@@ -56,10 +57,10 @@ article.tweet footer p {
 }
 
 .tweet-icons {
-  color: #4056A1;
+  color: #1D5B79;
   font-size: 16px;
 }
 
 .tweet-icons i:hover {
-  color: #D69821;
+  color: #7CC2AE;
 }

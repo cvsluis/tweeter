@@ -31,26 +31,27 @@
 }
 
 .new-tweet button {
-  background-color: #4056A1;
+  background-color: #1D5B79;
   color: #fff;
   padding: 8px;
   border: none;
+  border-radius: 8px;
 }
 
 .new-tweet button:hover {
-  background-color: #586CAD;
+  background-color: #236b8f;
   cursor: pointer;
 }
 
 .counter-red {
-  color: #ED3C1F;
+  color: #c12352;
 }
 
 /* ERROR MESSAGE */
 .new-tweet .error {
-  border: 2px solid #ED3C1F;
-  color: #FF0000;
-  background-color: #FF000033;
+  border-radius: 15px;
+  color: #c12352;
+  background-color: #c1235225;
   padding: 18px;
   display: flex;
   align-items: baseline;

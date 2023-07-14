@@ -1,7 +1,7 @@
 nav {
   font-family: 'Bungee', sans-serif;
   color: #FFFFFF;
-  padding: 0 1.5em;
+  padding: 1.5em;
   height: 120px;
   width: 100vw;
   position: fixed;
@@ -39,13 +39,13 @@ nav span {
 }
 
 .nav-action i {
-  color: #ED3C1F;
+  color: #c12352;
   --fa-animation-duration: 2s;
 }
 
  @media only screen and (min-width: 1024px) {
   nav {
-    background-color: #4056A1;
+    background-color: #199a88;
     background-image: none;
   }
  }

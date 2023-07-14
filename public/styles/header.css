@@ -1,9 +1,8 @@
 .main-header {
-  background-color: #D69821;
+  background-color: #7CC2AE;
   background-image: url("../images/asfalt-light.png");
   width: 100%;
   height: 520px;
-  padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,5 +21,6 @@
     width: 40%;
     height: 400px;
     padding: 0;
+    border-radius: 15px;
   }
  }
