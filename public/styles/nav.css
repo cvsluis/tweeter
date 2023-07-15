@@ -8,7 +8,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
- }
+}
 
 nav span {
   font-family: 'Bungee', sans-serif;
@@ -34,7 +34,7 @@ nav span {
 
 .nav-action:hover {
   cursor: pointer;
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transition: ease-in 0.125s;
 }
 
@@ -43,9 +43,15 @@ nav span {
   --fa-animation-duration: 2s;
 }
 
- @media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 426px) {
+  .nav-action p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   nav {
     background-color: #199a88;
     background-image: none;
   }
- }
+}

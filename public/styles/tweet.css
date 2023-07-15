@@ -64,3 +64,18 @@ article.tweet footer p {
 .tweet-icons i:hover {
   color: #7CC2AE;
 }
+
+@media only screen and (max-width: 426px) {
+  article.tweet header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .user-icon {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  article.tweet h4 {
+    align-self: flex-end;
+  }
+}
