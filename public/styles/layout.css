@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -25,24 +26,24 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+main {
   width: 90%;
   margin: 40px auto;
   display: flex;
   flex-direction: column;
- }
+}
 
- #tweets-container {
+#tweets-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
- }
- 
- .gap40 {
-  gap: 40px;
- }
+}
 
- @media only screen and (min-width: 1024px) {
+.gap40 {
+  gap: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
   .main-container {
     padding-top: 160px;
     padding-bottom: 40px;
@@ -56,4 +57,4 @@ body {
     width: 65%;
     margin: 0;
   }
- }
+}
