@@ -13,22 +13,23 @@ article.tweet:hover {
 article.tweet header {
   font-weight: 400;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.user-icon {
-  display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.user-icon img {
+.user-names {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-names img {
   width: 50px;
   height: 50px;
 }
 
-.user-icon h3 {
+.user-names h3 {
   margin: 0;
   font-weight: 400;
 }
@@ -36,6 +37,7 @@ article.tweet header {
 article.tweet h4 {
   margin: 0;
   color: #1d5a793e;
+  text-align: right;
 }
 
 article.tweet p {
@@ -65,18 +67,26 @@ article.tweet footer p {
   color: #7CC2AE;
 }
 
-@media only screen and (max-width: 426px) {
-  article.tweet header {
+/* MOBILE VIEW */
+@media only screen and (max-width: 420px) {
+  article.tweet {
+    padding: 14px;
+  }
+
+  .user-names {
     flex-direction: column;
     align-items: flex-start;
   }
-  
-  .user-icon {
-    width: 100%;
-    justify-content: space-between;
+
+  article.tweet h3 {
+    font-size: 24px;  
   }
 
   article.tweet h4 {
-    align-self: flex-end;
+    font-size: 20px;  
+  }
+
+  article.tweet p {
+    font-size: 18px;
   }
 }

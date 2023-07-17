@@ -15,11 +15,12 @@ $(document).ready(function() {
     const $tweet = `      
   <article class="tweet">
     <header>
-      <div class="user-icon">
-        <img src="${tweet.user.avatars}" alt="User Profile Image"/>
+      <img src="${tweet.user.avatars}" alt="User Profile Image"/>
+      <div class="user-names">
         <h3>${tweet.user.name}</h3>
+        <h4>${tweet.user.handle}</h4>
       </div>
-      <h4>${tweet.user.handle}</h4>
+
     </header>
     <p>${escape(tweet.content.text)}</p>
     <footer>
