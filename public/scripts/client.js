@@ -102,13 +102,17 @@ $(document).ready(function() {
     $.ajax({
       method: "POST",
       url: "/tweets",
-      data: $tweet
-    }).then(function() {
-      // call function that renders one tweet
-      loadOneTweet();
-      // reset text area and counter
-      $('#tweet-text').val('');
-      $('.counter').val(140);
+      data: $tweet,
+      success: function() {
+        // call function that renders one tweet
+        loadOneTweet();
+        // reset text area and counter
+        $('#tweet-text').val('');
+        $('.counter').val(140);
+      },
+      error: function(err) {
+        alert("POST error: ", err);
+      }
     });
   });
 
