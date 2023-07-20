@@ -8,16 +8,25 @@
   height: 90px;
   border: none;
   outline: none;
-  background-color: #c12352;
-  color: white;
+  background-color: #C12352;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 2px;
   border-radius: 50%;
   font-size: 30px;
   transition: ease-out 0.125s;
 }
-
 .scroll-btn:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transition: ease-in 0.125s;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 420px) {
+  .scroll-btn {
+    transform: scale(80%);
+  }
+  .scroll-btn:hover {
+    transform: scale(90%);
+  }
 }

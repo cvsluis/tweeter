@@ -27,34 +27,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
 }
 
 .new-tweet button {
   background-color: #1D5B79;
-  color: #fff;
+  color: #FFFFFF;
   padding: 8px;
   border: none;
   border-radius: 8px;
 }
-
 .new-tweet button:hover {
-  background-color: #1d5a79de;
+  background-color: rgba(29, 90, 121, 0.8705882353);
   cursor: pointer;
 }
 
 .counter-red {
-  color: #c12352;
+  color: #C12352;
 }
 
 /* ERROR MESSAGE */
 .new-tweet .error {
   border-radius: 15px;
-  color: #c12352;
-  background-color: #c1235225;
+  color: #C12352;
+  background-color: rgba(193, 35, 82, 0.1450980392);
   padding: 18px;
   display: flex;
-  align-items: baseline;
+  align-items: stylesline;
   gap: 12px;
 }
 
