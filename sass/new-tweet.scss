@@ -1,3 +1,5 @@
+@import 'styles';
+
 /* NEW TWEET CONTAINER */
 .new-tweet {
   display: flex;
@@ -13,7 +15,7 @@
 
 .new-tweet textarea {
   border: none;
-  border-bottom: 4px solid #545149;
+  border-bottom: 4px solid $dark-grey;
   background-color: transparent;
   margin-bottom: 16px;
   font-size: 20px;
@@ -27,34 +29,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Bungee', sans-serif;
+  font-family: $header-font;
 }
 
 .new-tweet button {
-  background-color: #1D5B79;
-  color: #fff;
+  background-color: $navy;
+  color: $white;
   padding: 8px;
   border: none;
   border-radius: 8px;
-}
 
-.new-tweet button:hover {
-  background-color: #1d5a79de;
-  cursor: pointer;
+  &:hover {
+    background-color: $navy-light;
+    cursor: pointer;
+  }
 }
 
 .counter-red {
-  color: #c12352;
+  color: $magenta;
 }
 
 /* ERROR MESSAGE */
 .new-tweet .error {
   border-radius: 15px;
-  color: #c12352;
-  background-color: #c1235225;
+  color: $magenta;
+  background-color: $magenta-light;
   padding: 18px;
   display: flex;
-  align-items: baseline;
+  align-items: stylesline;
   gap: 12px;
 }
 

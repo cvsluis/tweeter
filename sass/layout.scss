@@ -3,11 +3,16 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
- html {
+
+@import 'styles';
+
+html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -16,10 +21,10 @@
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: $dark-grey;
+  background-color: $cream;
   font-size: 24px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: $body-font;
 }
 
 /*
@@ -55,7 +60,15 @@ main {
   }
 
   main {
-    width: 65%;
+    width: 60%;
     margin: 0;
+  }
+}
+
+/* ULTRA WIDE VIEW */
+@media only screen and (min-width: 1600px) { 
+  .main-container {
+    max-width: 1500px;
+    margin-inline: auto;
   }
 }

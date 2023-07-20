@@ -1,0 +1,22 @@
+// COLORS
+$mint: #7CC2AE;
+$teal: #199a88;
+$navy: #1D5B79;
+$navy-light: #1d5a79de;
+$magenta: #C12352;
+$magenta-light: #c1235225;
+$white: #FFFFFF;
+$dark-grey: #545149;
+$cream: #f4f1ec;
+$light-blue-grey: #1d5a793e;
+
+// FONTS
+$header-font: 'Bungee', sans-serif;
+$body-font: 'Source Sans 3', sans-serif;
+
+// ALIGNMENTS
+@mixin flex-center-align() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
