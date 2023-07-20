@@ -25,9 +25,9 @@ $(document).ready(function() {
     <footer>
       <p>${timeAgo}</p>
       <div class="tweet-icons">
-        <i class="fa-solid fa-flag"></i>
-        <i class="fa-solid fa-retweet"></i>
-        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-flag" alt="Flag Icon"></i>
+        <i class="fa-solid fa-retweet" alt="Retweet Icon"></i>
+        <i class="fa-solid fa-heart" alt="Heart Icon"></i>
       </div>
     </footer>
   </article>`;
