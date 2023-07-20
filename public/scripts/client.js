@@ -152,9 +152,10 @@ $(document).ready(function() {
   });
 
   // click event handler for scroll button
-  $(".scroll-btn").on("click", function() {
+  $(".scroll-btn").on("click", function(event) {
+    event.preventDefault();
     // scroll to top of page
-    window.scrollTo({ top: 0 });
+    $('html, body').animate({ scrollTop: 0 }, 1000);
     // call function to show new tweet form
     // do toggle argument set to false
     showTweetBox(false);
