@@ -8,6 +8,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
@@ -23,7 +24,7 @@ html {
 body {
   color: $dark-grey;
   background-color: $cream;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: $body-font;
 }
 

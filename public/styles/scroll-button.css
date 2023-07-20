@@ -13,9 +13,10 @@
   cursor: pointer;
   padding: 2px;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 1.8rem;
   transition: ease-out 0.125s;
 }
+
 .scroll-btn:hover {
   transform: scale(1.1);
   transition: ease-in 0.125s;
@@ -26,6 +27,7 @@
   .scroll-btn {
     transform: scale(80%);
   }
+  
   .scroll-btn:hover {
     transform: scale(90%);
   }

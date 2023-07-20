@@ -15,9 +15,10 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-bar span {
   font-family: "Bungee", sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .nav-action {
@@ -31,15 +32,18 @@ nav {
   gap: 8px;
   transition: ease-out 0.125s;
 }
+
 .nav-action:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: ease-in 0.125s;
 }
+
 .nav-action p {
   margin: 0;
   color: #FFFFFF;
 }
+
 .nav-action i {
   color: #C12352;
   --fa-animation-duration: 2s;
@@ -51,6 +55,7 @@ nav {
     display: none;
   }
 }
+
 /* DESKTOP VIEW */
 @media only screen and (min-width: 1024px) {
   nav {
@@ -58,6 +63,7 @@ nav {
     background-image: none;
   }
 }
+
 /* ULTRA WIDE VIEW */
 @media only screen and (min-width: 1600px) {
   .nav-bar {

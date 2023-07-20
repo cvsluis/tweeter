@@ -16,7 +16,7 @@
   border-bottom: 4px solid #545149;
   background-color: transparent;
   margin-bottom: 16px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   outline: none;
   resize: none;
@@ -37,6 +37,7 @@
   border: none;
   border-radius: 8px;
 }
+
 .new-tweet button:hover {
   background-color: rgba(29, 90, 121, 0.8705882353);
   cursor: pointer;

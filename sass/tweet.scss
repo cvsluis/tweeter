@@ -42,8 +42,8 @@ article.tweet h4 {
 }
 
 article.tweet p {
-    overflow-x: auto;
-    overflow-y: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 /* TWEET FOOTER */
@@ -56,12 +56,12 @@ article.tweet footer {
 
 article.tweet footer p {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .tweet-icons {
   color: $navy;
-  font-size: 16px;
+  font-size: 1rem;
 
   &:hover {
     color: $mint;
@@ -80,14 +80,14 @@ article.tweet footer p {
   }
 
   article.tweet h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   article.tweet h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   article.tweet p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }

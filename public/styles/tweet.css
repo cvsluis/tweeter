@@ -3,6 +3,7 @@ article.tweet {
   border: 4px solid #545149;
   padding: 24px;
 }
+
 article.tweet:hover {
   box-shadow: 12px 12px 2px 1px rgba(29, 90, 121, 0.2431372549);
 }
@@ -53,13 +54,14 @@ article.tweet footer {
 
 article.tweet footer p {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .tweet-icons {
   color: #1D5B79;
-  font-size: 16px;
+  font-size: 1rem;
 }
+
 .tweet-icons:hover {
   color: #7CC2AE;
 }
@@ -69,17 +71,21 @@ article.tweet footer p {
   article.tweet {
     padding: 14px;
   }
+
   .user-names {
     flex-direction: column;
     align-items: flex-start;
   }
+
   article.tweet h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
+
   article.tweet h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
+  
   article.tweet p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
