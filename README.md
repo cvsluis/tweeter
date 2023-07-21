@@ -16,6 +16,7 @@ View of Error Message and Scroll to Top Button on Tablet
 !["Tablet View"](docs/error_and_button_view.png)
 
 Mobile View with Tweet Hover Effects
+
 <img src="./docs/mobile_hover_view.png" width="250" alt="Mobile View">
 
 ## Features While Using Tweeter
