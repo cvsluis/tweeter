@@ -10,10 +10,13 @@ This project was built as a part of my learnings at [Lighthouse Labs](https://ww
 
 ## Final Product
 Desktop View
-!["Desktop View"](docs/desktop_view.png)
+
+<img src="./docs/desktop_view.png" width="600" alt="Desktop View">
 
 View of Error Message and Scroll to Top Button on Tablet
-!["Tablet View"](docs/error_and_button_view.png)
+
+<img src="./docs/error_and_button_view.png" width="500" alt="Tablet View">
+
 
 Mobile View with Tweet Hover Effects
 
