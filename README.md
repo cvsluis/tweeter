@@ -9,11 +9,14 @@ This repository is the starter code for the project: Students will fork and clon
 This project was built as a part of my learnings at [Lighthouse Labs](https://www.lighthouselabs.ca).
 
 ## Final Product
-Responsive Design
-!["Responsive Design"](docs/responsive-design.gif)
-
 Desktop View
-!["Desktop View"](docs/desktop_view.gif)
+!["Desktop View"](docs/desktop_view.png)
+
+View of Error Message and Scroll to Top Button on Tablet
+!["Tablet View"](docs/error_and_button_view.png)
+
+Mobile View with Tweet Hover Effects
+!["Mobile View"](docs/mobile_view_hover.png)
 
 ## Features While Using Tweeter
 
