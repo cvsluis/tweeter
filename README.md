@@ -13,7 +13,7 @@ Desktop View
 
 <img src="./docs/desktop_view.png" width="600" alt="Desktop View">
 
-View of Error Message and Scroll to Top Button on Tablet
+Error Message and Scroll to Top Button on Tablet View
 
 <img src="./docs/error_and_button_view.png" width="500" alt="Tablet View">
 
@@ -22,23 +22,24 @@ Mobile View with Tweet Hover Effects
 
 <img src="./docs/mobile_hover_view.png" width="250" alt="Mobile View">
 
+
 ## Features While Using Tweeter
 
-Write a New Tweet Button
+**Write a New Tweet Button**
 - Clicking on animated `Write a new tweet` button toggles showing and hiding tweet form
 - Showing tweet form enables text area automatically
 
-Scroll Button
+**Scroll Button**
 - Scrolling down page hides `Write a new tweet` button and instead a scroll to top arrow button appears
 
-Responsive Design
+**Responsive Design**
 - Breakpoints are set for mobile, tablet, desktop, and ultrawide monitors for best viewing pleasure
 
-Hover Effects
+**Hover Effects**
 - Buttons each have hover effects notifing user that the button is clickable
 - Individual tweets and tweet icons also have hover effects
 
-Error Messages
+**Error Messages**
 - Tweets that are empty or over 140 characters will be notifited with a unique error message
 
 ## Getting Started
