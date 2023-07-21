@@ -10,6 +10,7 @@ This project was built as a part of my learnings at [Lighthouse Labs](https://ww
 
 ## Final Product
 Desktop View
+
 !["Desktop View"](docs/desktop_view.png)
 
 Error Message and Scroll to Top Button on Tablet View
