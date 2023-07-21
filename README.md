@@ -4,6 +4,36 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
 
+## Purpose
+
+This project was built as a part of my learnings at [Lighthouse Labs](https://www.lighthouselabs.ca).
+
+## Final Product
+Responsive Design
+!["Responsive Design"](docs/responsive-design.gif)
+
+Desktop View
+!["Desktop View"](docs/desktop_view.gif)
+
+## Features While Using Tweeter
+
+Write a New Tweet Button
+- Clicking on animated `Write a new tweet` button toggles showing and hiding tweet form
+- Showing tweet form enables text area automatically
+
+Scroll Button
+- Scrolling down page hides `Write a new tweet` button and instead a scroll to top arrow button appears
+
+Responsive Design
+- Breakpoints are set for mobile, tablet, desktop, and ultrawide monitors for best viewing pleasure
+
+Hover Effects
+- Buttons each have hover effects notifing user that the button is clickable
+- Individual tweets and tweet icons also have hover effects
+
+Error Messages
+- Tweets that are empty or over 140 characters will be notifited with a unique error message
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
@@ -14,5 +44,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
-- Express
-- Node 5.10.x or above
+- [Express](https://expressjs.com)
+- [Node.js](https://nodejs.org) v5.10.x or above
+- [Body-parser](https://www.npmjs.com/package/body-parser)
+- [Chance](https://www.npmjs.com/package/chance)
+- [jQuery](https://jquery.com/)
+- [timeago.js](https://cdnjs.com/libraries/timeago.js)
+- [SASS](https://www.npmjs.com/package/sass)
